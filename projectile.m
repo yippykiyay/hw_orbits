@@ -24,6 +24,7 @@ tau=0.1;               % time step size
 dat=[time x v];        % solution matrix
 dragconst=0.5*rho*area/mass;
 adaptErr=5e-4;
+params = [grav dragconst];
 %
 counter = 0;
 while(x(2)>=0 & counter<10000)         % repeat until the projectile hits the ground
@@ -36,11 +37,13 @@ while(x(2)>=0 & counter<10000)         % repeat until the projectile hits the gr
         time = time + tau;
     elseif(method==2)  % Runge Kutta
         % Call rk4
+        state = rk4(state,time,tau,@derivsProj,params);
         x = [state(1) state(2)];   % 4th order Runge-Kutta
         v = [state(3) state(4)];
         time = time + tau; 
     else               % Adaptive Runge Kutta
         % Call rka
+        [state,time,tau] = rka(state,time,tau,adaptErr,@derivsProj,params);
         x = [state(1) state(2)];   % 4th order Runge-Kutta
         v = [state(3) state(4)];
     end
