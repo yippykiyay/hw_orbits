@@ -12,7 +12,7 @@ Homework for Garcia Ch. 3, orbital motion
 
 ## Problem 1 (in class)<a name="2"></a>
 
-Modify the program <tt>projectile.m</tt> and the associated function <tt>derivsProj.m</tt> so that it includes the option to use the Runge-Kutta (<tt>rk4.m</tt>) and adaptive Runge-Kutta (<tt>rka.m</tt>) solvers. Your program is working if it produces the following outputs for the four methods.
+Modify the program <tt>projectile.m</tt> and the associated function <tt>derivsProj.m</tt> so that it includes the option to use the Runge-Kutta (<tt>rk4.m</tt>) and adaptive Runge-Kutta (<tt>rka.m</tt>) solvers. Your program is working if it produces the following outputs for the three methods (hit "Run" multiple times and add a legend in the command window).
 
 ![Problem 1](ProjectileRK.png)
 
