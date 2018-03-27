@@ -14,7 +14,7 @@ Homework for Garcia Ch. 3, orbital motion
 
 Modify the program <tt>projectile.m</tt> and the associated function <tt>derivsProj.m</tt> so that it includes the option to use the Runge-Kutta (<tt>rk4.m</tt>) and adaptive Runge-Kutta (<tt>rka.m</tt>) solvers. Your program is working if it produces the following outputs for the four methods.
 
-![Problem 1](OrbitImage.gif)
+![Problem 1](ProjectileRK.png)
 
 What conclusions can you make about the different solvers based on your results? Use the <tt>disp()</tt> function to have your program print your answer in the command window.
 
