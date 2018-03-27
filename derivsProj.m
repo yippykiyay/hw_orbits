@@ -3,7 +3,7 @@ function deriv = derivsProj(s,t,params)
 %  Inputs
 %    s      State vector [r(1) r(2) v(1) v(2)]
 %    t      Time (not used)
-%    GM     Parameter G*M (gravitational const. * solar mass)
+%    params Parameters needed for calculating acceleration (maybe drag, etc)
 %  Output
 %    deriv  Derivatives [dr(1)/dt dr(2)/dt dv(1)/dt dv(2)/dt]
 
